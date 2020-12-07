@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(115, 191, 204);
+}
+
+.flex-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+h3 {
+    margin: 1rem;    
+}
+
+.clock {
+    font-size: 3rem;
+}
+.pairs-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.card {
+    width: 18%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    background: url(../img/b.jpg);
+    background-size: cover;
+}
+img {
+    height: 100%;
+    width: 100%;
+    transition: all .1s;
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+    transform: rotate3d(0, 1, 0, 0.5turn);
+}
+
+.close {
+    transform: rotate3d(0, 1, 0, 0.5turn);
+}
+
+.disabled {
+    pointer-events: none;
+}
